@@ -1,0 +1,9 @@
+<footer>
+    <div class="container">
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title | escape }}</p>
+        {% if site.email %}
+        <p>Contact us: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        {% endif %}
+        <p>{{ site.description | escape }}</p>
+    </div>
+</footer>
