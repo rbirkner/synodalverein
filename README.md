@@ -1,0 +1,2 @@
+# synodalverein
+Webseite des Synodalvereins
