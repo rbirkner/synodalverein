@@ -1,0 +1,25 @@
+description: >
+  Der Synodalverein ist die traditionsreichste Fraktion der Zürcher Kirchensynode und 
+  stellt sich seit 1896 den jeweils aktuellen Herausforderungen. Der Synodalverein denkt 
+  und handelt nicht nach ideologischen Vorgaben, sondern agiert lösungsorientiert.
+columns:
+  - heading: "Spiritualität"
+    tag: "spirituality"
+    text: >
+      Wir setzen uns für eine zeitgemässe evangelische Spiritualität ein, welche die Menschen 
+      für ihr Leben inspiriert und trägt. Wir fördern eine Kirche, die nahe bei Gott und den Menschen ist.
+  - heading: "Identität"
+    tag: "identity"
+    text: >
+      Wir stehen ein für eine Profilierung reformierter Identität in Wort und Tat. Wir 
+      wollen Menschen für die Aufgaben in der Kirche motivieren und befähigen.
+  - heading: "Reform"
+    tag: "reformation"
+    text: >
+      Treu dem reformatorischen «Ecclesia semper reformanda» wollen wir die Kirche beständig erneuern, 
+      damit sie zukunftsfähig bleibt. Dazu gehört auch eine nachhaltige Kapitalsicherung.
+  - heading: "Fairantwortung"
+    tag: "responsibility"
+    text: >
+      Wir wollen eine Kirche, die sich für einen respektvollen Umgang mit der Schöpfung stark macht, 
+      indem sie fair und verantwortlich mit allem Leben und den natürlichen Ressourcen umgeht.

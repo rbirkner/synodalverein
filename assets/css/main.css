@@ -5,50 +5,83 @@ body {
     min-height: 100vh;
     margin: 0;
     background-color: #c2c2c2;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
-.container {
-    max-width: 800px;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-
-header div.container {
+header div.banner {
     background-image: url('/assets/svg/background.svg');
     background-size: cover;
-    background-position: center;
-    height: 570px;
-    width: 800px;
+    background-position: center top;
+    aspect-ratio: 7/4;
+    margin: 0;
+    container-type: inline-size;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
-header .word {
+header .tag {
     text-transform: uppercase;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     font-weight: 50;
-    font-size: 4rem;
+    font-size: 8cqw;
 }
 
 header .identity {
     color: #DA116F;
-    margin: 115px 0 0 80px;
-    z-index: 1;
+    margin: 7cqw 0 0 12cqw;
+    z-index: 0;
 }
 
 header .spirituality {
     color: #007CB7;
-    margin: -40px 0 0 30px;
-    z-index: 2;
+    margin: 12.5cqw 0 0 4cqw;
+    z-index: 1;
 }
 
 header .responsibility {
     color: #FFFFFE;
-    margin: -40px 0 0 10px;
-    z-index: 3;
+    margin: 18cqw 0 0 3cqw;
+    z-index: 2;
 }
 
 header .reformation {
     color: #A3A421;
-    margin: -40px 0 0 90px;
-    z-index: 2;
+    margin: 23.5cqw 0 0 9cqw;
+    z-index: 1;
+}
+
+header .title {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem 1rem 1.5rem;
+    background-color: #ffffffaa;
+    container-type: inline-size;
+}
+
+header .title h1 a {
+    color: #1F2656;
+    text-decoration: none;
+    font-size: 4cqw;
+}
+
+section#about {
+    background-color: #ffffff;
+}
+
+section#about .identity {
+    color: #DA116F;
+}
+
+section#about .spirituality {
+    color: #007CB7;
+}
+
+section#about .responsibility {
+    color: #1F2656;
+}
+
+section#about .reformation {
+    color: #A3A421;
 }

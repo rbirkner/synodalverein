@@ -1,0 +1,18 @@
+<section id="about">
+    <div class="container">
+        <!-- Description Text -->
+        <div class="description mb-4">
+            <p>{{ include.description }}</p>
+        </div>
+
+        <!-- List of Sentences -->
+        <div class="row">
+            {% for column in include.columns %}
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h3 class="{{ column.tag }}">{{ column.heading }}</h3>
+                <p>{{ column.text }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
