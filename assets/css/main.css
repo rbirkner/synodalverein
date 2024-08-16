@@ -9,7 +9,7 @@ body {
 }
 
 header div.banner {
-    background-image: url('/assets/svg/background.svg');
+    background-image: url('../svg/background.svg');
     background-size: cover;
     background-position: center top;
     aspect-ratio: 7/4;
@@ -64,6 +64,10 @@ header .title h1 a {
     color: #1F2656;
     text-decoration: none;
     font-size: 4cqw;
+}
+
+section {
+    padding: 1.5rem;
 }
 
 section#about {
