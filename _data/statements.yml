@@ -1,0 +1,50 @@
+heading: "Darum bin ich im Synodalverein..."
+statements:
+  - image: "assets/img/thomas_villwock.jpeg"
+    statement: |
+      Im Synodalverein finden sich Vertreter verschiedener Frömmigkeiten und politischer Ausrichtungen, 
+      was meiner Vorstellung von Kirche entspricht. Das schafft lebhafte und bereichernde Diskussionen, 
+      die eine hervorragende Vorbereitung auf die Sitzungen der Kirchensynode darstellen.
+    name: "Thomas Villwock"
+    profession: "Pfarrer"
+    since: "2019"
+  - image: "assets/img/bettina_diener.jpeg"
+    statement: |
+      Mich fasziniert, dass im Synodalverein Mitglieder aus den verschiedensten Berufsgruppen und 
+      Lebensformen zusammenarbeiten. Dieses gebündelte Wissen erlaubt einen differenzierten Blick auf 
+      die anstehenden Synodegeschäfte.
+    name: "Bettina Diener"
+    profession: "Treuhänderin"
+    since: "2015"
+  - image: "assets/img/susanne_furrer-stocker.jpeg"
+    statement: |
+      Der Synodalverein liegt mir am Herzen, weil er das kirchliche sowie das weltliche Zeitgeschehen genau 
+      wahrnimmt und mit viel Engagement und innovativen Gedanken zukunftsbasierte Lösungen für unsere 
+      Kirche anstrebt. Die Kirche lebt dank einer lebendigen Basis und das leben wir.
+    name: "Susanne Furrer"
+    profession: "Pflegefachfrau"
+    since: "2015"
+  - image: "assets/img/ruediger_birkner.jpeg"
+    statement: |
+      Kirche vor Ort und ein aktives Gemeindeleben liegen mir am Herzen. Im Synodalverein kann ich mich 
+      einbringen und schätze die Vielfalt an Hintergründen und Meinungen. Gemeinsam diskutieren wir, 
+      finden Lösungen und respektieren auch unterschiedliche Meinungen.
+    name: "Rüdiger Birkner"
+    profession: "Privatier"
+    since: "2015"
+  - image: "assets/img/michael_baenninger.jpeg"
+    statement: |
+      Im Synodalverein haben die unterschiedlichen Meinungen aller Mitglieder Platz. Gemeinsam setzen 
+      wir uns in unserer Arbeit als Synodale für tragfähige und zukunftsgerichtete Strukturen unserer 
+      reformierten Landeskirche ein. Dabei kommen wir nur durch Diskussion, Dialog und Kompromisse weiter.
+    name: "Michael Bänninger"
+    profession: "dipl. Soz. FH, Kantonsrat"
+    since: "2015"
+  - image: "assets/img/monica_mueller.jpeg"
+    statement: |
+      Übersicht behalten und doch Details pflegen. Unterschiedliche Meinungen zusammenführen und daraus 
+      trag- und mehrheitsfähige Lösungen erarbeiten. Kirche fairantwortungsvoll weiterentwickeln auf 
+      dem Boden des Evangeliums. Engagement ist erwünscht, wird unterstützt und gefördert im Synodalverein...
+    name: "Monica Müller"
+    profession: "Landschaftsarchitektin FH"
+    since: "2015"

@@ -1,12 +1,12 @@
 <section id="about">
     <!-- Description Text -->
     <div class="description mb-4">
-        {{ include.description | strip | markdownify }}
+        {{ site.data.about.description | strip | markdownify }}
     </div>
 
     <!-- List of Sentences -->
     <div class="row">
-        {% for column in include.columns %}
+        {% for column in site.data.about.columns %}
         <div class="col-md-3 col-sm-6 mb-4">
             <h3 class="{{ column.tag }}">{{ column.heading }}</h3>
             <p>{{ column.text }}</p>

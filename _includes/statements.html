@@ -1,0 +1,26 @@
+<section id="statements">
+    <h1 class="mb-4">{{ site.data.statements.heading }}</h1>
+    <div class="row">
+        {% for statement in site.data.statements.statements %}
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="{{ statement.image }}" class="card-img" alt="{{ statement.name }}">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body">
+                            <p class="card-text">&laquo;{{ statement.statement | escape }}&raquo;</p>
+                            <p class="card-name">
+                                <strong>{{ statement.name | escape }}</strong>, {{ statement.profession
+                                | escape }}<br />
+                                <span class="card-date text-muted">In der Synode seit {{ statement.since }}</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

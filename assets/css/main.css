@@ -89,3 +89,31 @@ section#about .responsibility {
 section#about .reformation {
     color: #A3A421;
 }
+
+section#statements {
+    background-color: #BFCA67;
+}
+
+section#statements .card-img {
+    margin: 1rem 0 0 1rem;
+}
+
+section#statements .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#statements .card-text {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+section#statements .card-name {
+    margin: 0;
+}
+
+section#statements .card-date {
+    font-size: 0.9rem;
+    color: #888;
+}
