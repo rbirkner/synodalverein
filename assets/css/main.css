@@ -181,3 +181,27 @@ section#board h1 {
     font-size: 0.9rem;
     margin: 0;
 }
+
+footer div.row {
+    background-color: #FFFFFE;
+    padding: 1rem;
+    margin: 0;
+}
+
+footer div.row a {
+    text-decoration: none;
+}
+
+footer div.banner {
+    background-image: url('../svg/background.svg');
+    background-size: cover;
+    background-position: center top;
+    margin: 0;
+    height: 20px;
+}
+
+footer div.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
