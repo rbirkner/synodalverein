@@ -9,10 +9,22 @@ body {
 }
 
 header div.banner {
-    background-image: url('../svg/background.svg');
+    background-image: url('../svg/header.svg');
     background-size: cover;
     background-position: center top;
     aspect-ratio: 7/4;
+    margin: 0;
+    container-type: inline-size;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+header div.minimal-banner {
+    background-image: url('../svg/header.svg');
+    background-size: cover;
+    background-position: center top;
+    aspect-ratio: 7/1.5;
     margin: 0;
     container-type: inline-size;
     display: flex;
@@ -182,6 +194,33 @@ section#board h1 {
     margin: 0;
 }
 
+section#news {
+    background-color: #B7160D;
+}
+
+section#news h1 {
+    color: #ededed;
+}
+
+.post {
+    background-color: #FFFFFE;
+    padding: 1rem 0 1rem 0;
+}
+
+section#news .btn {
+    color: #FFFFFE;
+    background-color: #8F1D10;
+}
+
+section#news h3 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.blog-post {
+    background-color: #FFFFFE;
+}
+
 footer div.row {
     background-color: #FFFFFE;
     padding: 1rem;
@@ -193,7 +232,7 @@ footer div.row a {
 }
 
 footer div.banner {
-    background-image: url('../svg/background.svg');
+    background-image: url('../svg/footer.svg');
     background-size: cover;
     background-position: center top;
     margin: 0;

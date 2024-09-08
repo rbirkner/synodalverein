@@ -1,0 +1,36 @@
+---
+layout: minimal
+title: Blog
+---
+
+<section id="news">
+    <div class="row">
+        {% for post in site.posts %}
+        <div class="col-12 mb-3">
+            <div class="row post rounded">
+                <!-- Image (if exists) -->
+                {% if post.image %}
+                <div class="col-md-4">
+                    <img src="{{ post.image | relative_url }}" class="img-fluid rounded" alt="{{ post.title }}">
+                </div>
+                {% else %}
+                <div class="col-md-4"></div>
+                {% endif %}
+
+                <!-- Text content -->
+                <div class="col-md-8">
+                    <h3>
+                        <a href="{{ post.url | relative_url }}">
+                            {{ post.title }}
+                        </a>
+                    </h3>
+                    <p>{{ post.excerpt }}</p>
+                    <div class="d-flex justify-content-end">
+                        <a href="{{ post.url | relative_url }}" class="btn">Weiterlesen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

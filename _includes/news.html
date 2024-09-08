@@ -1,0 +1,37 @@
+<section id="news">
+    <h1 class="mb-4">Aktuelles</h1>
+
+    <div class="row">
+        {% for post in site.posts limit:3 %}
+        <div class="col-12 mb-3">
+            <div class="row post rounded">
+                <!-- Image (if exists) -->
+                {% if post.image %}
+                <div class="col-md-4">
+                    <img src="{{ post.image | relative_url }}" class="img-fluid rounded" alt="{{ post.title }}">
+                </div>
+                {% else %}
+                <div class="col-md-4"></div>
+                {% endif %}
+
+                <!-- Text content -->
+                <div class="col-md-8">
+                    <h3>
+                        <a href="{{ post.url | relative_url }}">
+                            {{ post.title }}
+                        </a>
+                    </h3>
+                    <p>{{ post.excerpt }}</p>
+                    <div class="d-flex justify-content-end">
+                        <a href="{{ post.url | relative_url }}" class="btn">Weiterlesen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="{{ '/aktuelles' | relative_url }}" class="btn">Alle Beitr&auml;ge</a>
+    </div>
+</section>
