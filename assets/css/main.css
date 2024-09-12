@@ -161,9 +161,9 @@ section#board h1 {
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
     text-align: center;
-    opacity: 0;
+    /*opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;*/
 }
 
 /* President Specific Styles */

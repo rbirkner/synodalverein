@@ -4,6 +4,9 @@ president:
   position: "Präsident"
 
 members:
+  - image: "assets/img/heinrich_braendli.jpeg"
+    name: "Heinrich Brändli"
+    position: "Präsident"
   - image: "assets/img/andrea_widmer_graf.jpeg"
     name: "Andrea Widmer Graf"
     position: "Vize-Präsidentin"
