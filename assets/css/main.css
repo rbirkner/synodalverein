@@ -217,6 +217,93 @@ section#news h3 a {
     color: #000000;
 }
 
+section#events {
+    background-color: #4A8EB3;
+}
+
+/* Event Year Heading */
+section#events .event-year {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* Year Separator (Thicker) */
+section#events .year-separator {
+    border-top: 2px solid #000;
+    margin: 10px 0;
+}
+
+/* Month Separator (Thinner) */
+section#events .month-separator {
+    border-top: 1px solid #000;
+    margin: 5px 0;
+}
+
+/* Month Heading */
+section#events .event-month {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* Event Day */
+section#events .event-day {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* Event Time */
+section#events .event-time {
+    font-size: 1rem;
+}
+
+/* Event Details */
+section#events .event-details {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+section#events .event-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+section#events .event-description {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+section#events .event-location a {
+    color: #444;
+    text-decoration: none;
+}
+
+section#events .event-location a:hover {
+    text-decoration: underline;
+}
+
+/* Adjust column alignments */
+section#events .year-col {
+    text-align: left;
+}
+
+section#events .month-col {
+    text-align: left;
+}
+
+section#events .date-col {
+    text-align: left;
+    padding-left: 10px;
+}
+
+section#events .btn {
+    color: #FFFFFE;
+    background-color: #356680;
+}
+
 .blog-post {
     background-color: #FFFFFE;
 }
