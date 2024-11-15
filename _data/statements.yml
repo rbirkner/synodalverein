@@ -1,6 +1,6 @@
 heading: "Darum bin ich im Synodalverein..."
 statements:
-  - image: "assets/img/thomas_villwock.jpeg"
+  - image: "assets/img/members/thomas_villwock.jpeg"
     statement: |
       Im Synodalverein finden sich Vertreter verschiedener Frömmigkeiten und politischer Ausrichtungen, 
       was meiner Vorstellung von Kirche entspricht. Das schafft lebhafte und bereichernde Diskussionen, 
@@ -8,7 +8,7 @@ statements:
     name: "Thomas Villwock"
     profession: "Pfarrer"
     since: "2019"
-  - image: "assets/img/bettina_diener.jpeg"
+  - image: "assets/img/members/bettina_diener.jpeg"
     statement: |
       Mich fasziniert, dass im Synodalverein Mitglieder aus den verschiedensten Berufsgruppen und 
       Lebensformen zusammenarbeiten. Dieses gebündelte Wissen erlaubt einen differenzierten Blick auf 
@@ -16,7 +16,7 @@ statements:
     name: "Bettina Diener"
     profession: "Treuhänderin"
     since: "2015"
-  - image: "assets/img/susanne_furrer-stocker.jpeg"
+  - image: "assets/img/members/susanne_furrer-stocker.jpeg"
     statement: |
       Der Synodalverein liegt mir am Herzen, weil er das kirchliche sowie das weltliche Zeitgeschehen genau 
       wahrnimmt und mit viel Engagement und innovativen Gedanken zukunftsbasierte Lösungen für unsere 
@@ -24,7 +24,7 @@ statements:
     name: "Susanne Furrer"
     profession: "Pflegefachfrau"
     since: "2015"
-  - image: "assets/img/ruediger_birkner.jpeg"
+  - image: "assets/img/members/ruediger_birkner.jpeg"
     statement: |
       Kirche vor Ort und ein aktives Gemeindeleben liegen mir am Herzen. Im Synodalverein kann ich mich 
       einbringen und schätze die Vielfalt an Hintergründen und Meinungen. Gemeinsam diskutieren wir, 
@@ -32,7 +32,7 @@ statements:
     name: "Rüdiger Birkner"
     profession: "Privatier"
     since: "2015"
-  - image: "assets/img/michael_baenninger.jpeg"
+  - image: "assets/img/members/michael_baenninger.jpeg"
     statement: |
       Im Synodalverein haben die unterschiedlichen Meinungen aller Mitglieder Platz. Gemeinsam setzen 
       wir uns in unserer Arbeit als Synodale für tragfähige und zukunftsgerichtete Strukturen unserer 
@@ -40,7 +40,7 @@ statements:
     name: "Michael Bänninger"
     profession: "dipl. Soz. FH, Kantonsrat"
     since: "2015"
-  - image: "assets/img/monica_mueller.jpeg"
+  - image: "assets/img/members/monica_mueller.jpeg"
     statement: |
       Übersicht behalten und doch Details pflegen. Unterschiedliche Meinungen zusammenführen und daraus 
       trag- und mehrheitsfähige Lösungen erarbeiten. Kirche fairantwortungsvoll weiterentwickeln auf 
