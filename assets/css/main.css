@@ -276,6 +276,10 @@ section#events .event-description {
     margin-bottom: 5px;
 }
 
+section#events .event-location {
+    color: #444;
+}
+
 section#events .event-location a {
     color: #444;
     text-decoration: none;
