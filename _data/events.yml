@@ -143,6 +143,11 @@
   location: "Rathaus Hard, Zürich"
   google_map: "https://maps.app.goo.gl/6K5YFTsDerZTP8RPA"
 
+- title: "Begegnung und Dialog der Synoden"
+  date_from: "2026-08-31"
+  time_from: "18:30"
+  location: "Innenstadt, Zürich"
+
 - title: "Fraktionssitzung"
   date_from: "2026-09-08"
   time_from: "18:45"
