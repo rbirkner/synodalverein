@@ -1,0 +1,11 @@
+<section id="leitbild" class="leitbild-section" aria-labelledby="leitbild-title">
+    <div class="leitbild-heading">
+        <p class="eyebrow">{{ site.data.leitbild.title }}</p>
+        <h2 id="leitbild-title">{{ site.data.leitbild.intro }}</h2>
+    </div>
+    <div class="leitbild-copy">
+        {% for paragraph in site.data.leitbild.paragraphs %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
+    </div>
+</section>

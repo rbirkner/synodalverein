@@ -1,7 +1,16 @@
-<header>
-    <div class="minimal-banner">
-        <div class="title">
-            <h1><a href="{{ '/' | relative_url }}">{{ site.title | escape }}</a></h1>
-        </div>
+<header class="site-header">
+    <div class="site-nav">
+        <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="{{ site.title | escape }} – Startseite">
+            <img src="{{ '/assets/img/logo/Logo_farbig_transparent.png' | relative_url }}" alt="Zürcherischer Synodalverein">
+        </a>
+        <nav aria-label="Hauptnavigation">
+            <a href="{{ '/' | relative_url }}#about">Über uns</a>
+            <a href="{{ '/' | relative_url }}#positions">Positionen</a>
+            <a href="{{ '/' | relative_url }}#leitbild">Leitbild</a>
+            <a href="{{ '/' | relative_url }}#members">Mitglieder</a>
+            <a href="{{ '/termine' | relative_url }}">Termine</a>
+        </nav>
+        <a class="nav-cta" href="mailto:{{ site.email }}">Mitmachen <span aria-hidden="true">→</span></a>
     </div>
+    <div class="colour-band" aria-hidden="true"></div>
 </header>

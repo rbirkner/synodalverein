@@ -1,9 +1,8 @@
-<section id="events">
-    <h2 class="mb-4">Nächste Termine</h2>
-
-    {% include event-list.html limit=5 %}
-
-    <div class="text-center mt-4">
-        <a href="{{ '/termine' | relative_url }}" class="btn">Alle Termine</a>
+<section id="events" class="events-section">
+    <div class="section-heading">
+        <p class="eyebrow">Kalender</p>
+        <h2>Nächste Termine</h2>
     </div>
+    {% include event-list.html limit=5 %}
+    <a href="{{ '/termine' | relative_url }}" class="button button-secondary">Alle Termine <span aria-hidden="true">→</span></a>
 </section>

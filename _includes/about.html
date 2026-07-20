@@ -1,16 +1,46 @@
-<section id="about">
-    <!-- Description Text -->
-    <div class="description mb-4">
-        {{ site.data.about.description | strip | markdownify }}
-    </div>
-
-    <!-- List of Sentences -->
-    <div class="row">
-        {% for column in site.data.about.columns %}
-        <div class="col-md-3 col-sm-6 mb-4">
-            <h3 class="{{ column.tag }}">{{ column.heading }}</h3>
-            <p>{{ column.text }}</p>
+<section id="about" class="hero">
+    <div class="hero-copy">
+        <h1>Kirche gemeinsam<br><span>weiterdenken.</span></h1>
+        <p class="hero-intro">Wir engagieren uns für eine Kirche, die sich erneuert, den Menschen nahe ist und ihre
+            reformierten Wurzeln mit Zuversicht in die Zukunft trägt.</p>
+        <p class="heritage">Seit 1896 engagiert für eine lebendige, zukunftsfähige Kirche.</p>
+        <div class="hero-actions">
+            <a class="button button-primary" href="#positions">Unsere Positionen <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#events">Nächste Termine <span aria-hidden="true">→</span></a>
         </div>
+    </div>
+    <div class="hero-image">
+        <img src="{{ '/assets/img/bullinger_kirche.jpg' | relative_url }}" alt="Sitzung der Zürcher Kirchensynode">
+        {% assign today = site.time | date: "%Y-%m-%d" %}
+        {% assign next_event = site.data.events | where_exp: "event", "event.date_from >= today" | sort: "date_from" |
+        first %}
+        {% if next_event %}
+        {% assign german_months = "Januar,Februar,März,April,Mai,Juni,Juli,August,September,Oktober,November,Dezember" |
+        split: "," %}
+        {% assign next_event_month_index = next_event.date_from | date: "%-m" | minus: 1 %}
+        {% assign next_event_month = german_months[next_event_month_index] %}
+        <a class="next-event" href="#events">
+            <span><small>Nächster Termin</small><strong>{{ next_event.date_from | date: "%-d" }}. {{ next_event_month }}
+                    {{ next_event.date_from | date: "%Y" }}{% if next_event.time_from %} · {{ next_event.time_from }}
+                    Uhr{% endif %}</strong><em>{{ next_event.title }}</em></span>
+            <b aria-hidden="true">→</b>
+        </a>
+        {% endif %}
+    </div>
+</section>
+
+<section id="positions" class="principles" aria-labelledby="positions-title">
+    <div class="section-heading">
+        <p class="eyebrow">Wofür wir stehen</p>
+        <h2 id="positions-title">Vier Perspektiven.<br>Ein gemeinsames Ziel.</h2>
+    </div>
+    <div class="principle-grid">
+        {% for column in site.data.about.columns %}
+        <article class="principle {{ column.tag }}">
+            <span class="principle-number">0{{ forloop.index }}</span>
+            <h3>{{ column.heading }}</h3>
+            <p>{{ column.text }}</p>
+        </article>
         {% endfor %}
     </div>
 </section>
