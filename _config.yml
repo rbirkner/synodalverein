@@ -47,3 +47,5 @@ url: "https://www.synodalverein.ch" # the base hostname & protocol for your site
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+  - aktuelles.html
