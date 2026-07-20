@@ -36,7 +36,8 @@ h1, h2, h3 { letter-spacing: -.055em; line-height: .98; }
 h1 { max-width: 640px; margin-bottom: 1.6rem; font-size: clamp(3.2rem, 5.6vw, 6.3rem); font-weight: 790; }
 h1 span { color: var(--blue); }
 .hero-intro { max-width: 530px; margin-bottom: 1.4rem; font-size: clamp(1rem, 1.35vw, 1.16rem); font-weight: 480; }
-.heritage { max-width: 390px; margin-bottom: 2rem; padding-left: 1rem; border-left: 2px solid var(--coral); font-size: .88rem; font-weight: 650; }
+.hero-invitation { max-width: 500px; margin: -.55rem 0 1.4rem; font-size: .94rem; font-weight: 650; }
+.heritage { max-width: 510px; margin-bottom: 2rem; padding-left: 1rem; border-left: 2px solid var(--coral); font-size: .84rem; font-weight: 650; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; }
 .button { padding: .9rem 1.2rem; }
 .button-primary { color: white; background: var(--coral); }
