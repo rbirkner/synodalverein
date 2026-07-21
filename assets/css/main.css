@@ -28,16 +28,15 @@ body { margin: 0; background: #e6ece9; color: var(--ink); font-family: Inter, ui
 .colour-band { height: 12px; background: repeating-linear-gradient(90deg, #00467D 0 3.5%, #4A8EB3 3.5% 7%, #5F264C 7% 10.5%, #BA1A3C 10.5% 14%, #D74D36 14% 17.5%, #E07523 17.5% 21%, #6B5B23 21% 24.5%, #C3A360 24.5% 28%, #DFACAA 28% 31.5%, #F1AB56 31.5% 35%, #004C62 35% 38.5%, #AF9A2B 38.5% 42%); }
 
 section { padding: clamp(3.8rem, 7vw, 7.2rem) clamp(1.5rem, 5vw, 5.8rem); }
-.hero { display: grid; grid-template-columns: minmax(0, .84fr) minmax(0, 1.16fr); padding: 0; min-height: 580px; }
+.hero { display: grid; grid-template-columns: minmax(0, .84fr) minmax(0, 1.16fr); column-gap: clamp(2rem, 4vw, 5rem); padding: 0; min-height: 580px; }
 .hero-copy { display: flex; flex-direction: column; justify-content: center; padding: clamp(3rem, 7vw, 7rem) clamp(1.5rem, 6vw, 6.2rem); }
 .eyebrow { margin: 0 0 1rem; color: var(--coral); font-size: .75rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 h1, h2, h3, p { margin-top: 0; }
 h1, h2, h3 { letter-spacing: -.055em; line-height: .98; }
 h1 { max-width: 640px; margin-bottom: 1.6rem; font-size: clamp(3.2rem, 5.6vw, 6.3rem); font-weight: 790; }
-h1 span { color: var(--blue); }
+.hero h1 { color: var(--blue); }
+.hero h1 span { color: var(--ink); }
 .hero-intro { max-width: 530px; margin-bottom: 1.4rem; font-size: clamp(1rem, 1.35vw, 1.16rem); font-weight: 480; }
-.hero-invitation { max-width: 500px; margin: -.55rem 0 1.4rem; font-size: .94rem; font-weight: 650; }
-.heritage { max-width: 510px; margin-bottom: 2rem; padding-left: 1rem; border-left: 2px solid var(--coral); font-size: .84rem; font-weight: 650; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; }
 .button { padding: .9rem 1.2rem; }
 .button-primary { color: white; background: var(--coral); }
@@ -101,7 +100,7 @@ h1 span { color: var(--blue); }
 .member-card h3 { position: absolute; right: 0; bottom: 0; left: 0; margin: 0; padding: 2.4rem 1rem .85rem; background: linear-gradient(transparent, rgba(17, 6, 17, .86)); color: white; font-size: 1.15rem; font-weight: 670; letter-spacing: -.03em; line-height: 1.1; }
 
 .site-footer { display: flex; justify-content: space-between; gap: 2rem; padding: clamp(3rem, 5vw, 5rem) clamp(1.5rem, 5vw, 5.8rem); color: white; background: var(--ink); }
-.site-footer .eyebrow { color: #ff958a; }
+.site-footer .eyebrow { color: var(--blue); }
 .site-footer h2 { margin: 0; font-size: clamp(2rem, 3.5vw, 3.6rem); font-weight: 740; }
 .footer-contact { align-self: end; max-width: 360px; }
 .footer-contact p { margin-bottom: .4rem; }
