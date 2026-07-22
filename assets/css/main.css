@@ -34,7 +34,7 @@ section { padding: clamp(3.8rem, 7vw, 7.2rem) clamp(1.5rem, 5vw, 5.8rem); }
 h1, h2, h3, p { margin-top: 0; }
 h1, h2, h3 { letter-spacing: -.055em; line-height: .98; }
 h1 { max-width: 640px; margin-bottom: 1.6rem; font-size: clamp(3.2rem, 5.6vw, 6.3rem); font-weight: 790; }
-.hero h1 { color: var(--blue); }
+.hero h1 { max-width: 100%; color: var(--blue); font-size: clamp(3.2rem, 4.5vw, 5rem); }
 .hero h1 span { color: var(--ink); }
 .hero-intro { max-width: 530px; margin-bottom: 1.4rem; font-size: clamp(1rem, 1.35vw, 1.16rem); font-weight: 480; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; }
@@ -125,7 +125,7 @@ h1 { max-width: 640px; margin-bottom: 1.6rem; font-size: clamp(3.2rem, 5.6vw, 6.
     .wordmark { width: 155px; flex-basis: 155px; }
     .nav-cta { padding: .58rem .7rem; font-size: .78rem; }
     .colour-band { height: 8px; }
-    h1 { font-size: clamp(3.1rem, 14vw, 4.5rem); }
+    h1, .hero h1 { font-size: clamp(3.1rem, 14vw, 4.5rem); }
     .hero-intro { font-size: 1rem; }
     .hero-image, .hero-image > img { min-height: 360px; }
     .next-event { bottom: 1rem; padding: .7rem .8rem; }
