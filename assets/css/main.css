@@ -7,6 +7,7 @@
     --green: #697025;
     --plum: #5F264C;
     --blue: #4A8EB3;
+    --blue-hover: #006EAB;
     --teal: #004C62;
 }
 
@@ -23,7 +24,7 @@ body { margin: 0; background: #e6ece9; color: var(--ink); font-family: Inter, ui
 .site-nav a:hover { color: var(--coral); }
 .nav-cta, .button { display: inline-flex; align-items: center; justify-content: center; gap: .7rem; border-radius: 7px; font-size: .9rem; font-weight: 750; text-decoration: none; transition: transform .18s ease, background .18s ease; }
 .nav-cta { min-width: 136px; padding: .75rem 1rem; color: white; background: var(--coral); }
-.nav-cta:hover, .button-primary:hover { color: white; background: #004C62; transform: translateY(-2px); }
+.nav-cta:hover, .button-primary:hover { color: white; background: var(--blue-hover); transform: translateY(-2px); }
 .site-nav .nav-cta:hover { color: white; }
 .colour-band, .colour-band-top, .section-divider { height: 12px; background-image: url('../svg/footer.svg'); background-repeat: repeat-x; background-size: 700px 12px; background-position-x: calc(var(--tile-offset, 0) * -50px); }
 .colour-band--top { --tile-offset: 0; }
