@@ -25,7 +25,17 @@ body { margin: 0; background: #e6ece9; color: var(--ink); font-family: Inter, ui
 .nav-cta { min-width: 136px; padding: .75rem 1rem; color: white; background: var(--coral); }
 .nav-cta:hover, .button-primary:hover { color: white; background: #004C62; transform: translateY(-2px); }
 .site-nav .nav-cta:hover { color: white; }
-.colour-band { height: 12px; background: repeating-linear-gradient(90deg, #00467D 0 3.5%, #4A8EB3 3.5% 7%, #5F264C 7% 10.5%, #BA1A3C 10.5% 14%, #D74D36 14% 17.5%, #E07523 17.5% 21%, #6B5B23 21% 24.5%, #C3A360 24.5% 28%, #DFACAA 28% 31.5%, #F1AB56 31.5% 35%, #004C62 35% 38.5%, #AF9A2B 38.5% 42%); }
+.colour-band, .colour-band-top, .section-divider { height: 12px; background-image: url('../svg/footer.svg'); background-repeat: repeat-x; background-size: 700px 12px; background-position-x: calc(var(--tile-offset, 0) * -50px); }
+.colour-band--top { --tile-offset: 0; }
+.colour-band--nav { --tile-offset: 3; }
+.section-divider--one { --tile-offset: 5; }
+.section-divider--two { --tile-offset: 8; }
+.section-divider--three { --tile-offset: 11; }
+.section-divider--four { --tile-offset: 2; }
+.section-divider--five { --tile-offset: 6; }
+.section-divider--six { --tile-offset: 9; }
+.section-divider--footer { --tile-offset: 12; }
+.colour-band--footer { --tile-offset: 4; }
 
 section { padding: clamp(3.8rem, 7vw, 7.2rem) clamp(1.5rem, 5vw, 5.8rem); }
 .hero { display: grid; grid-template-columns: minmax(0, .84fr) minmax(0, 1.16fr); column-gap: clamp(2rem, 4vw, 5rem); padding: 0; min-height: 580px; }
@@ -93,18 +103,23 @@ h1 { max-width: 640px; margin-bottom: 1.6rem; font-size: clamp(3.2rem, 5.6vw, 6.
 
 .members-section { color: white; background: var(--plum); }
 .members-section .eyebrow { color: #efb9c9; }
+.member-group-title { margin: 0 0 1.25rem; color: #efb9c9; font-size: clamp(1.35rem, 2vw, 1.8rem); font-weight: 720; letter-spacing: -.03em; }
+.member-group--members { margin-top: clamp(3.5rem, 6vw, 5.5rem); padding-top: clamp(3.5rem, 6vw, 5.5rem); }
 .members-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.kirchenraete-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 720px; }
 .member-card { position: relative; aspect-ratio: .82; overflow: hidden; background: #301b30; }
 .member-card img { width: 100%; height: 100%; object-fit: cover; object-position: top; filter: saturate(.85); transition: transform .35s ease; }
 .member-card:hover img { transform: scale(1.04); }
 .member-card h3 { position: absolute; right: 0; bottom: 0; left: 0; margin: 0; padding: 2.4rem 1rem .85rem; background: linear-gradient(transparent, rgba(17, 6, 17, .86)); color: white; font-size: 1.15rem; font-weight: 670; letter-spacing: -.03em; line-height: 1.1; }
 
-.site-footer { display: flex; justify-content: space-between; gap: 2rem; padding: clamp(3rem, 5vw, 5rem) clamp(1.5rem, 5vw, 5.8rem); color: white; background: var(--ink); }
+.site-footer { display: flex; position: relative; justify-content: space-between; gap: 2rem; padding: clamp(3rem, 5vw, 5rem) clamp(1.5rem, 5vw, 5.8rem); color: white; background: var(--ink); }
 .site-footer .eyebrow { color: var(--blue); }
 .site-footer h2 { margin: 0; font-size: clamp(2rem, 3.5vw, 3.6rem); font-weight: 740; }
-.footer-contact { align-self: end; max-width: 360px; }
-.footer-contact p { margin-bottom: .4rem; }
-.footer-contact a { color: white; font-weight: 700; }
+.footer-imprint { align-self: end; max-width: 300px; font-size: .86rem; line-height: 1.55; }
+.footer-imprint p { margin: .55rem 0 0; }
+.footer-imprint-title { margin-top: 0 !important; color: var(--blue); font-size: clamp(1.25rem, 2vw, 1.65rem); font-weight: 720; letter-spacing: -.03em; }
+.footer-imprint a { color: white; font-weight: 700; }
+.footer-divider { position: absolute; right: 0; bottom: 0; left: 0; }
 
 @media (max-width: 860px) {
     .site-nav { min-height: auto; flex-wrap: wrap; gap: .9rem 1.4rem; padding-top: 1.2rem; padding-bottom: 1.2rem; }
@@ -118,13 +133,14 @@ h1 { max-width: 640px; margin-bottom: 1.6rem; font-size: clamp(3.2rem, 5.6vw, 6.
     .principle-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .leitbild-section { grid-template-columns: 1fr; gap: 2rem; }
     .members-grid { grid-template-columns: repeat(3, 1fr); }
+    .kirchenraete-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 600px; }
 }
 
 @media (max-width: 540px) {
     .site-nav { gap: .7rem; }
     .wordmark { width: 155px; flex-basis: 155px; }
     .nav-cta { padding: .58rem .7rem; font-size: .78rem; }
-    .colour-band { height: 8px; }
+    .colour-band, .colour-band-top, .section-divider { height: 8px; background-size: 182px 8px; background-position-x: calc(var(--tile-offset, 0) * -13px); }
     h1, .hero h1 { font-size: clamp(3.1rem, 14vw, 4.5rem); }
     .hero-intro { font-size: 1rem; }
     .hero-image, .hero-image > img { min-height: 360px; }
@@ -138,7 +154,7 @@ h1 { max-width: 640px; margin-bottom: 1.6rem; font-size: clamp(3.2rem, 5.6vw, 6.
     .members-grid { grid-template-columns: repeat(2, 1fr); gap: .65rem; }
     .member-card h3 { padding: 2rem .65rem .6rem; font-size: .95rem; }
     .site-footer { display: block; }
-    .footer-contact { margin-top: 2.5rem; }
+    .footer-imprint { margin-top: 2rem; }
     .event-row { grid-template-columns: 78px minmax(0, 1fr); gap: .85rem; min-height: 0; padding: 1.15rem 0; }
     .event-date strong { font-size: 2.2rem; }
     .event-date span { font-size: .75rem; }

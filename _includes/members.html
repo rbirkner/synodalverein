@@ -3,12 +3,26 @@
         <p class="eyebrow">Menschen im Synodalverein</p>
         <h2>Engagiert für<br>Zürichs Kirche.</h2>
     </div>
-    <div class="members-grid">
-        {% for member in site.data.members %}
-        <article class="member-card">
-            <img src="{{ member.image }}" alt="{{ member.name }}" loading="lazy">
-            <h3>{{ member.name }}</h3>
-        </article>
-        {% endfor %}
+    <div class="member-group">
+        <h3 class="member-group-title">Kirchenräte</h3>
+        <div class="members-grid kirchenraete-grid">
+            {% for member in site.data.kirchenraete %}
+            <article class="member-card">
+                <img src="{{ member.image }}" alt="{{ member.name }}" loading="lazy">
+                <h3>{{ member.name }}</h3>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="member-group member-group--members">
+        <h3 class="member-group-title">Mitglieder</h3>
+        <div class="members-grid">
+            {% for member in site.data.members %}
+            <article class="member-card">
+                <img src="{{ member.image }}" alt="{{ member.name }}" loading="lazy">
+                <h3>{{ member.name }}</h3>
+            </article>
+            {% endfor %}
+        </div>
     </div>
 </section>
