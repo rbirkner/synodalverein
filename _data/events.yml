@@ -168,6 +168,8 @@
 - title: "Fraktionsausflug ins Appenzellerland"
   date_from: "2026-10-10"
   time_from: "08:00"
+  location: "Carparkplatz am Sihlquai, Zürich"
+  google_map: "https://maps.app.goo.gl/Rz5rakKnQKN6ZRCA8"
 
 - title: "Fraktionssitzung"
   date_from: "2026-11-04"
